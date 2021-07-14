@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F63E042D4554F855E785408 /* Pods_thoughtCounter_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8443B7C7AF0CA421E788E /* Pods_thoughtCounter_WatchKit_App.framework */; };
+		8355D5EE0D88AD38BA65914C /* Pods_thoughtCounter_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACE426EAEB35835F7780513 /* Pods_thoughtCounter_WatchKit_Extension.framework */; };
+		846E2C2025D2C3D10039C0E3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 846E2C1E25D2C3D10039C0E3 /* Model.xcdatamodeld */; };
+		846E2C2125D2C3D10039C0E3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 846E2C1E25D2C3D10039C0E3 /* Model.xcdatamodeld */; };
+		84D5599825D2A8D500FA66A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5599725D2A8D500FA66A1 /* AppDelegate.swift */; };
+		84D5599A25D2A8D500FA66A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5599925D2A8D500FA66A1 /* SceneDelegate.swift */; };
+		84D5599C25D2A8D500FA66A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5599B25D2A8D500FA66A1 /* ViewController.swift */; };
+		84D5599F25D2A8D500FA66A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D5599D25D2A8D500FA66A1 /* Main.storyboard */; };
+		84D559A125D2A8D600FA66A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D559A025D2A8D600FA66A1 /* Assets.xcassets */; };
+		84D559A425D2A8D600FA66A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D559A225D2A8D600FA66A1 /* LaunchScreen.storyboard */; };
+		84D559A925D2A8D600FA66A1 /* thoughtCounter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 84D559A825D2A8D600FA66A1 /* thoughtCounter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84D559AF25D2A8D600FA66A1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D559AD25D2A8D600FA66A1 /* Interface.storyboard */; };
+		84D559B125D2A8D700FA66A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D559B025D2A8D700FA66A1 /* Assets.xcassets */; };
+		84D559B825D2A8D700FA66A1 /* thoughtCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84D559B725D2A8D700FA66A1 /* thoughtCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84D559BD25D2A8D700FA66A1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D559BC25D2A8D700FA66A1 /* InterfaceController.swift */; };
+		84D559BF25D2A8D700FA66A1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D559BE25D2A8D700FA66A1 /* ExtensionDelegate.swift */; };
+		84D559C125D2A8D700FA66A1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D559C025D2A8D700FA66A1 /* ComplicationController.swift */; };
+		84D559C325D2A8D800FA66A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D559C225D2A8D800FA66A1 /* Assets.xcassets */; };
+		DEEF38C76E3EFD3E057FBFE1 /* Pods_thoughtCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F4664736AE856A43876087 /* Pods_thoughtCounter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84D559AA25D2A8D600FA66A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D5598C25D2A8D500FA66A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84D559A725D2A8D600FA66A1;
+			remoteInfo = "thoughtCounter WatchKit App";
+		};
+		84D559B925D2A8D700FA66A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D5598C25D2A8D500FA66A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84D559B625D2A8D700FA66A1;
+			remoteInfo = "thoughtCounter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84D559CA25D2A8D800FA66A1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84D559B825D2A8D700FA66A1 /* thoughtCounter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D559CE25D2A8D800FA66A1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				84D559A925D2A8D600FA66A1 /* thoughtCounter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07B0CE3EB63FF3D98CF4C44E /* Pods-thoughtCounter WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtCounter WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-thoughtCounter WatchKit Extension/Pods-thoughtCounter WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		0FD9B112A6920B1648F50ED7 /* Pods-thoughtCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtCounter.debug.xcconfig"; path = "Target Support Files/Pods-thoughtCounter/Pods-thoughtCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		4778D79133F5C6921F259B8F /* Pods-thoughtCounter WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtCounter WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-thoughtCounter WatchKit Extension/Pods-thoughtCounter WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		50C8443B7C7AF0CA421E788E /* Pods_thoughtCounter_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thoughtCounter_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBD135E8C36F8D5005EA162 /* Pods-thoughtCounter WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtCounter WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-thoughtCounter WatchKit App/Pods-thoughtCounter WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		6FA336E46E51A0222670C801 /* Pods-thoughtCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtCounter.release.xcconfig"; path = "Target Support Files/Pods-thoughtCounter/Pods-thoughtCounter.release.xcconfig"; sourceTree = "<group>"; };
+		846E2C1F25D2C3D10039C0E3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		84D5599425D2A8D500FA66A1 /* thoughtCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thoughtCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D5599725D2A8D500FA66A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84D5599925D2A8D500FA66A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84D5599B25D2A8D500FA66A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84D5599E25D2A8D500FA66A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84D559A025D2A8D600FA66A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84D559A325D2A8D600FA66A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84D559A525D2A8D600FA66A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D559A825D2A8D600FA66A1 /* thoughtCounter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "thoughtCounter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D559AE25D2A8D600FA66A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		84D559B025D2A8D700FA66A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84D559B225D2A8D700FA66A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D559B725D2A8D700FA66A1 /* thoughtCounter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "thoughtCounter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D559BC25D2A8D700FA66A1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		84D559BE25D2A8D700FA66A1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		84D559C025D2A8D700FA66A1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		84D559C225D2A8D800FA66A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84D559C425D2A8D800FA66A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACE426EAEB35835F7780513 /* Pods_thoughtCounter_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thoughtCounter_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F4664736AE856A43876087 /* Pods_thoughtCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thoughtCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8724E48492341E39F3678ED /* Pods-thoughtCounter WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtCounter WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-thoughtCounter WatchKit App/Pods-thoughtCounter WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		658AF8846086F0F1B39DD177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F63E042D4554F855E785408 /* Pods_thoughtCounter_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D5599125D2A8D500FA66A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEEF38C76E3EFD3E057FBFE1 /* Pods_thoughtCounter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D559B425D2A8D700FA66A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8355D5EE0D88AD38BA65914C /* Pods_thoughtCounter_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20FAA20EB91B313E9EC1D885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3F4664736AE856A43876087 /* Pods_thoughtCounter.framework */,
+				50C8443B7C7AF0CA421E788E /* Pods_thoughtCounter_WatchKit_App.framework */,
+				BACE426EAEB35835F7780513 /* Pods_thoughtCounter_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		846E2C2525D2C4D40039C0E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				846E2C1E25D2C3D10039C0E3 /* Model.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84D5598B25D2A8D500FA66A1 = {
+			isa = PBXGroup;
+			children = (
+				846E2C2525D2C4D40039C0E3 /* Model */,
+				84D5599625D2A8D500FA66A1 /* thoughtCounter */,
+				84D559AC25D2A8D600FA66A1 /* thoughtCounter WatchKit App */,
+				84D559BB25D2A8D700FA66A1 /* thoughtCounter WatchKit Extension */,
+				84D5599525D2A8D500FA66A1 /* Products */,
+				8DDB9649B9753776BE71609F /* Pods */,
+				20FAA20EB91B313E9EC1D885 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84D5599525D2A8D500FA66A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84D5599425D2A8D500FA66A1 /* thoughtCounter.app */,
+				84D559A825D2A8D600FA66A1 /* thoughtCounter WatchKit App.app */,
+				84D559B725D2A8D700FA66A1 /* thoughtCounter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84D5599625D2A8D500FA66A1 /* thoughtCounter */ = {
+			isa = PBXGroup;
+			children = (
+				84D5599725D2A8D500FA66A1 /* AppDelegate.swift */,
+				84D5599925D2A8D500FA66A1 /* SceneDelegate.swift */,
+				84D5599B25D2A8D500FA66A1 /* ViewController.swift */,
+				84D5599D25D2A8D500FA66A1 /* Main.storyboard */,
+				84D559A025D2A8D600FA66A1 /* Assets.xcassets */,
+				84D559A225D2A8D600FA66A1 /* LaunchScreen.storyboard */,
+				84D559A525D2A8D600FA66A1 /* Info.plist */,
+			);
+			path = thoughtCounter;
+			sourceTree = "<group>";
+		};
+		84D559AC25D2A8D600FA66A1 /* thoughtCounter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				84D559AD25D2A8D600FA66A1 /* Interface.storyboard */,
+				84D559B025D2A8D700FA66A1 /* Assets.xcassets */,
+				84D559B225D2A8D700FA66A1 /* Info.plist */,
+			);
+			path = "thoughtCounter WatchKit App";
+			sourceTree = "<group>";
+		};
+		84D559BB25D2A8D700FA66A1 /* thoughtCounter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84D559BC25D2A8D700FA66A1 /* InterfaceController.swift */,
+				84D559BE25D2A8D700FA66A1 /* ExtensionDelegate.swift */,
+				84D559C025D2A8D700FA66A1 /* ComplicationController.swift */,
+				84D559C225D2A8D800FA66A1 /* Assets.xcassets */,
+				84D559C425D2A8D800FA66A1 /* Info.plist */,
+			);
+			path = "thoughtCounter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8DDB9649B9753776BE71609F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FD9B112A6920B1648F50ED7 /* Pods-thoughtCounter.debug.xcconfig */,
+				6FA336E46E51A0222670C801 /* Pods-thoughtCounter.release.xcconfig */,
+				E8724E48492341E39F3678ED /* Pods-thoughtCounter WatchKit App.debug.xcconfig */,
+				6BBD135E8C36F8D5005EA162 /* Pods-thoughtCounter WatchKit App.release.xcconfig */,
+				4778D79133F5C6921F259B8F /* Pods-thoughtCounter WatchKit Extension.debug.xcconfig */,
+				07B0CE3EB63FF3D98CF4C44E /* Pods-thoughtCounter WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84D5599325D2A8D500FA66A1 /* thoughtCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D559CF25D2A8D800FA66A1 /* Build configuration list for PBXNativeTarget "thoughtCounter" */;
+			buildPhases = (
+				82F8B771D783C533A4A6F3D5 /* [CP] Check Pods Manifest.lock */,
+				84D5599025D2A8D500FA66A1 /* Sources */,
+				84D5599125D2A8D500FA66A1 /* Frameworks */,
+				84D5599225D2A8D500FA66A1 /* Resources */,
+				84D559CE25D2A8D800FA66A1 /* Embed Watch Content */,
+				9CE76678FAF7555F546E9E7F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D559AB25D2A8D600FA66A1 /* PBXTargetDependency */,
+			);
+			name = thoughtCounter;
+			productName = thoughtCounter;
+			productReference = 84D5599425D2A8D500FA66A1 /* thoughtCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84D559A725D2A8D600FA66A1 /* thoughtCounter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D559CB25D2A8D800FA66A1 /* Build configuration list for PBXNativeTarget "thoughtCounter WatchKit App" */;
+			buildPhases = (
+				3F553DE982C56DE02137D9A1 /* [CP] Check Pods Manifest.lock */,
+				84D559A625D2A8D600FA66A1 /* Resources */,
+				84D559CA25D2A8D800FA66A1 /* Embed App Extensions */,
+				658AF8846086F0F1B39DD177 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D559BA25D2A8D700FA66A1 /* PBXTargetDependency */,
+			);
+			name = "thoughtCounter WatchKit App";
+			productName = "thoughtCounter WatchKit App";
+			productReference = 84D559A825D2A8D600FA66A1 /* thoughtCounter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		84D559B625D2A8D700FA66A1 /* thoughtCounter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D559C725D2A8D800FA66A1 /* Build configuration list for PBXNativeTarget "thoughtCounter WatchKit Extension" */;
+			buildPhases = (
+				10689E56B634BC029EFB91E7 /* [CP] Check Pods Manifest.lock */,
+				84D559B325D2A8D700FA66A1 /* Sources */,
+				84D559B425D2A8D700FA66A1 /* Frameworks */,
+				84D559B525D2A8D700FA66A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "thoughtCounter WatchKit Extension";
+			productName = "thoughtCounter WatchKit Extension";
+			productReference = 84D559B725D2A8D700FA66A1 /* thoughtCounter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84D5598C25D2A8D500FA66A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					84D5599325D2A8D500FA66A1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					84D559A725D2A8D600FA66A1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					84D559B625D2A8D700FA66A1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 84D5598F25D2A8D500FA66A1 /* Build configuration list for PBXProject "thoughtCounter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84D5598B25D2A8D500FA66A1;
+			productRefGroup = 84D5599525D2A8D500FA66A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84D5599325D2A8D500FA66A1 /* thoughtCounter */,
+				84D559A725D2A8D600FA66A1 /* thoughtCounter WatchKit App */,
+				84D559B625D2A8D700FA66A1 /* thoughtCounter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84D5599225D2A8D500FA66A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D559A425D2A8D600FA66A1 /* LaunchScreen.storyboard in Resources */,
+				84D559A125D2A8D600FA66A1 /* Assets.xcassets in Resources */,
+				84D5599F25D2A8D500FA66A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D559A625D2A8D600FA66A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D559B125D2A8D700FA66A1 /* Assets.xcassets in Resources */,
+				84D559AF25D2A8D600FA66A1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D559B525D2A8D700FA66A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D559C325D2A8D800FA66A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10689E56B634BC029EFB91E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thoughtCounter WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F553DE982C56DE02137D9A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thoughtCounter WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F8B771D783C533A4A6F3D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thoughtCounter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CE76678FAF7555F546E9E7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-thoughtCounter/Pods-thoughtCounter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-thoughtCounter/Pods-thoughtCounter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-thoughtCounter/Pods-thoughtCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84D5599025D2A8D500FA66A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D5599C25D2A8D500FA66A1 /* ViewController.swift in Sources */,
+				84D5599825D2A8D500FA66A1 /* AppDelegate.swift in Sources */,
+				84D5599A25D2A8D500FA66A1 /* SceneDelegate.swift in Sources */,
+				846E2C2025D2C3D10039C0E3 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D559B325D2A8D700FA66A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D559BF25D2A8D700FA66A1 /* ExtensionDelegate.swift in Sources */,
+				84D559BD25D2A8D700FA66A1 /* InterfaceController.swift in Sources */,
+				84D559C125D2A8D700FA66A1 /* ComplicationController.swift in Sources */,
+				846E2C2125D2C3D10039C0E3 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84D559AB25D2A8D600FA66A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84D559A725D2A8D600FA66A1 /* thoughtCounter WatchKit App */;
+			targetProxy = 84D559AA25D2A8D600FA66A1 /* PBXContainerItemProxy */;
+		};
+		84D559BA25D2A8D700FA66A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84D559B625D2A8D700FA66A1 /* thoughtCounter WatchKit Extension */;
+			targetProxy = 84D559B925D2A8D700FA66A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84D5599D25D2A8D500FA66A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D5599E25D2A8D500FA66A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84D559A225D2A8D600FA66A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D559A325D2A8D600FA66A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84D559AD25D2A8D600FA66A1 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D559AE25D2A8D600FA66A1 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84D559C525D2A8D800FA66A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84D559C625D2A8D800FA66A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		84D559C825D2A8D800FA66A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4778D79133F5C6921F259B8F /* Pods-thoughtCounter WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF2BPP2WYA;
+				INFOPLIST_FILE = "thoughtCounter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asleepy.thoughtsCounter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		84D559C925D2A8D800FA66A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B0CE3EB63FF3D98CF4C44E /* Pods-thoughtCounter WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF2BPP2WYA;
+				INFOPLIST_FILE = "thoughtCounter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asleepy.thoughtsCounter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		84D559CC25D2A8D800FA66A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8724E48492341E39F3678ED /* Pods-thoughtCounter WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF2BPP2WYA;
+				IBSC_MODULE = thoughtCounter_WatchKit_Extension;
+				INFOPLIST_FILE = "thoughtCounter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asleepy.thoughtsCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		84D559CD25D2A8D800FA66A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBD135E8C36F8D5005EA162 /* Pods-thoughtCounter WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF2BPP2WYA;
+				IBSC_MODULE = thoughtCounter_WatchKit_Extension;
+				INFOPLIST_FILE = "thoughtCounter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asleepy.thoughtsCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		84D559D025D2A8D800FA66A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FD9B112A6920B1648F50ED7 /* Pods-thoughtCounter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF2BPP2WYA;
+				INFOPLIST_FILE = thoughtCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asleepy.thoughtsCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		84D559D125D2A8D800FA66A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FA336E46E51A0222670C801 /* Pods-thoughtCounter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF2BPP2WYA;
+				INFOPLIST_FILE = thoughtCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asleepy.thoughtsCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84D5598F25D2A8D500FA66A1 /* Build configuration list for PBXProject "thoughtCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D559C525D2A8D800FA66A1 /* Debug */,
+				84D559C625D2A8D800FA66A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D559C725D2A8D800FA66A1 /* Build configuration list for PBXNativeTarget "thoughtCounter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D559C825D2A8D800FA66A1 /* Debug */,
+				84D559C925D2A8D800FA66A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D559CB25D2A8D800FA66A1 /* Build configuration list for PBXNativeTarget "thoughtCounter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D559CC25D2A8D800FA66A1 /* Debug */,
+				84D559CD25D2A8D800FA66A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D559CF25D2A8D800FA66A1 /* Build configuration list for PBXNativeTarget "thoughtCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D559D025D2A8D800FA66A1 /* Debug */,
+				84D559D125D2A8D800FA66A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		846E2C1E25D2C3D10039C0E3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				846E2C1F25D2C3D10039C0E3 /* Model.xcdatamodel */,
+			);
+			currentVersion = 846E2C1F25D2C3D10039C0E3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84D5598C25D2A8D500FA66A1 /* Project object */;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--RootController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="RootController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="thoughtCounter_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <dateLabel width="1" alignment="center" textAlignment="center" format="MMMM, d" id="bZn-LB-4OF">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </dateLabel>
+                        <group width="1" alignment="center" verticalAlignment="center" spacing="5" id="ItT-ty-Kw9">
+                            <items>
+                                <button width="0.29999999999999999" alignment="left" verticalAlignment="center" title="-" id="mch-Kh-RNW">
+                                    <connections>
+                                        <action selector="minusTapped" destination="AgC-eL-Hgc" id="wI6-Xz-4i8"/>
+                                    </connections>
+                                </button>
+                                <label width="0.40000000000000002" alignment="left" verticalAlignment="center" text="10" textAlignment="center" id="yrX-Se-syM"/>
+                                <button width="0.29999999999999999" alignment="left" verticalAlignment="center" title="+" id="ZAo-36-4bi">
+                                    <connections>
+                                        <action selector="plusTapped" destination="AgC-eL-Hgc" id="LDv-0V-hvF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="1" alignment="center" verticalAlignment="bottom" text="Хороший совет, чтобы не грустить, и еще строка" textAlignment="center" numberOfLines="0" id="pcn-aR-iHB">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="adviceLabel" destination="pcn-aR-iHB" id="gx2-Vm-ZcT"/>
+                        <outlet property="countLabel" destination="yrX-Se-syM" id="aMv-jL-3ly"/>
+                        <outlet property="minusButton" destination="mch-Kh-RNW" id="5KC-EA-dQB"/>
+                        <outlet property="plusButton" destination="ZAo-36-4bi" id="XAU-pq-S9N"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="96" y="-20"/>
+        </scene>
+    </scenes>
+</document>
